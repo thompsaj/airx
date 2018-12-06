@@ -454,7 +454,7 @@ Partial Class Form1
         Me.txtOutWBWin.Name = "txtOutWBWin"
         Me.txtOutWBWin.Size = New System.Drawing.Size(36, 20)
         Me.txtOutWBWin.TabIndex = 15
-        Me.txtOutWBWin.Text = "9"
+        Me.txtOutWBWin.Text = "72.5"
         '
         'Label23
         '
@@ -463,7 +463,7 @@ Partial Class Form1
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(82, 13)
         Me.Label23.TabIndex = 14
-        Me.Label23.Text = "Outdoor WB Winter:"
+        Me.Label23.Text = "WB Bin 2:"
         '
         'txtOutDBWin
         '
@@ -471,7 +471,7 @@ Partial Class Form1
         Me.txtOutDBWin.Name = "txtOutDBWin"
         Me.txtOutDBWin.Size = New System.Drawing.Size(36, 20)
         Me.txtOutDBWin.TabIndex = 13
-        Me.txtOutDBWin.Text = "10"
+        Me.txtOutDBWin.Text = "77.5"
         '
         'Label22
         '
@@ -480,7 +480,7 @@ Partial Class Form1
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(79, 13)
         Me.Label22.TabIndex = 12
-        Me.Label22.Text = "Outdoor DB Winter:"
+        Me.Label22.Text = "DB Bin 2:"
         '
         'txtOutWBSum
         '
@@ -488,7 +488,7 @@ Partial Class Form1
         Me.txtOutWBSum.Name = "txtOutWBSum"
         Me.txtOutWBSum.Size = New System.Drawing.Size(36, 20)
         Me.txtOutWBSum.TabIndex = 7
-        Me.txtOutWBSum.Text = "74"
+        Me.txtOutWBSum.Text = "82.5"
         '
         'Label18
         '
@@ -497,7 +497,7 @@ Partial Class Form1
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(89, 13)
         Me.Label18.TabIndex = 6
-        Me.Label18.Text = "Outdoor WB Summer:"
+        Me.Label18.Text = "WB Bin 1:"
         '
         'txtOutDBSum
         '
@@ -505,7 +505,7 @@ Partial Class Form1
         Me.txtOutDBSum.Name = "txtOutDBSum"
         Me.txtOutDBSum.Size = New System.Drawing.Size(36, 20)
         Me.txtOutDBSum.TabIndex = 5
-        Me.txtOutDBSum.Text = "93"
+        Me.txtOutDBSum.Text = "87.5"
         '
         'Label19
         '
@@ -514,7 +514,7 @@ Partial Class Form1
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(83, 13)
         Me.Label19.TabIndex = 4
-        Me.Label19.Text = "Outdoor DB Summer:"
+        Me.Label19.Text = "DB Bin 1:"
         '
         'GroupBox7
         '

@@ -743,7 +743,7 @@ Public Class Form1
         Dim HR As Double = Psychrometrics.WetBulbHR(weatherData.DB04, weatherData.MCWB04, CDbl(txtElev.Text))
 
         summerWBIndoor = 62.5
-
+        '50% RH
 
 
         Dim WinterDBIndoor As Double = Math.Min(72, summerDBIndoor)
