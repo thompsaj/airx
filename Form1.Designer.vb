@@ -57,6 +57,8 @@ Partial Class Form1
         Me.Label18 = New System.Windows.Forms.Label()
         Me.txtOutDBSum = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.txtOutDBbin3 = New System.Windows.Forms.TextBox()
+        Me.Label150 = New System.Windows.Forms.Label()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.chkUseDesignDB = New System.Windows.Forms.CheckBox()
         Me.btnBrowseFileLoc = New System.Windows.Forms.Button()
@@ -393,7 +395,7 @@ Partial Class Form1
         Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(12, 58)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(81, 13)
+        Me.Label20.Size = New System.Drawing.Size(102, 13)
         Me.Label20.TabIndex = 2
         Me.Label20.Text = "Indoor WB Summer:"
         '
@@ -410,7 +412,7 @@ Partial Class Form1
         Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(12, 27)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(78, 13)
+        Me.Label21.Size = New System.Drawing.Size(99, 13)
         Me.Label21.TabIndex = 0
         Me.Label21.Text = "Indoor DB Summer:"
         '
@@ -419,7 +421,7 @@ Partial Class Form1
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(12, 86)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(71, 13)
+        Me.Label17.Size = New System.Drawing.Size(92, 13)
         Me.Label17.TabIndex = 8
         Me.Label17.Text = "Indoor DB Winter:"
         '
@@ -436,7 +438,7 @@ Partial Class Form1
         Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(12, 114)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(74, 13)
+        Me.Label16.Size = New System.Drawing.Size(95, 13)
         Me.Label16.TabIndex = 10
         Me.Label16.Text = "Indoor WB Winter:"
         '
@@ -461,7 +463,7 @@ Partial Class Form1
         Me.Label23.AutoSize = True
         Me.Label23.Location = New System.Drawing.Point(14, 367)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(82, 13)
+        Me.Label23.Size = New System.Drawing.Size(55, 13)
         Me.Label23.TabIndex = 14
         Me.Label23.Text = "WB Bin 2:"
         '
@@ -478,7 +480,7 @@ Partial Class Form1
         Me.Label22.AutoSize = True
         Me.Label22.Location = New System.Drawing.Point(14, 341)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(79, 13)
+        Me.Label22.Size = New System.Drawing.Size(52, 13)
         Me.Label22.TabIndex = 12
         Me.Label22.Text = "DB Bin 2:"
         '
@@ -495,7 +497,7 @@ Partial Class Form1
         Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(14, 312)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(89, 13)
+        Me.Label18.Size = New System.Drawing.Size(55, 13)
         Me.Label18.TabIndex = 6
         Me.Label18.Text = "WB Bin 1:"
         '
@@ -512,9 +514,26 @@ Partial Class Form1
         Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(14, 283)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(83, 13)
+        Me.Label19.Size = New System.Drawing.Size(52, 13)
         Me.Label19.TabIndex = 4
         Me.Label19.Text = "DB Bin 1:"
+        '
+        'txtOutDBbin3
+        '
+        Me.txtOutDBbin3.Location = New System.Drawing.Point(123, 390)
+        Me.txtOutDBbin3.Name = "txtOutDBbin3"
+        Me.txtOutDBbin3.Size = New System.Drawing.Size(36, 20)
+        Me.txtOutDBbin3.TabIndex = 2
+        Me.txtOutDBbin3.Text = "67.5"
+        '
+        'Label150
+        '
+        Me.Label150.AutoSize = True
+        Me.Label150.Location = New System.Drawing.Point(17, 393)
+        Me.Label150.Name = "Label150"
+        Me.Label150.Size = New System.Drawing.Size(52, 13)
+        Me.Label150.TabIndex = 4
+        Me.Label150.Text = "DB Bin 3:"
         '
         'GroupBox7
         '
@@ -1713,6 +1732,8 @@ Partial Class Form1
         Me.Controls.Add(Me.txtOutDBSum)
         Me.Controls.Add(Me.GroupBox8)
         Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.txtOutDBbin3)
+        Me.Controls.Add(Me.Label150)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
@@ -1767,6 +1788,10 @@ Partial Class Form1
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents txtOutDBSum As System.Windows.Forms.TextBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
+    'Bin 3
+    Friend WithEvents txtOutDBbin3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label150 As System.Windows.Forms.Label
+
     Friend WithEvents txtInWBSum As System.Windows.Forms.TextBox
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents txtInDBSum As System.Windows.Forms.TextBox
