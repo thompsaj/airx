@@ -41,22 +41,22 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.txtOutWBWin = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.txtOutDBWin = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.txtInWBWin = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.txtInDBWin = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.txtOutWBSum = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.txtOutDBSum = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.txtInWBSum = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.txtInDBSum = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.txtInDBWin = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtInWBWin = New System.Windows.Forms.TextBox()
+        Me.txtOutWBWin = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtOutDBWin = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtOutWBSum = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txtOutDBSum = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.chkUseDesignDB = New System.Windows.Forms.CheckBox()
         Me.btnBrowseFileLoc = New System.Windows.Forms.Button()
@@ -139,6 +139,7 @@ Partial Class Form1
         Me.Label58 = New System.Windows.Forms.Label()
         Me.txtSat = New System.Windows.Forms.TextBox()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.chkJan = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtFrostControl = New System.Windows.Forms.TextBox()
         Me.Label41 = New System.Windows.Forms.Label()
@@ -171,10 +172,9 @@ Partial Class Form1
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.txtEER = New System.Windows.Forms.TextBox()
-        Me.txtRTUCapacity = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtRTUCapacity = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.chkJan = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -378,109 +378,7 @@ Partial Class Form1
         Me.GroupBox6.Size = New System.Drawing.Size(163, 138)
         Me.GroupBox6.TabIndex = 9
         Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "Design Conditions"
-        '
-        'txtOutWBWin
-        '
-        Me.txtOutWBWin.Location = New System.Drawing.Point(123, 364)
-        Me.txtOutWBWin.Name = "txtOutWBWin"
-        Me.txtOutWBWin.Size = New System.Drawing.Size(36, 20)
-        Me.txtOutWBWin.TabIndex = 15
-        Me.txtOutWBWin.Text = "9"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(14, 367)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(82, 13)
-        Me.Label23.TabIndex = 14
-        Me.Label23.Text = "Out WB Winter:"
-        '
-        'txtOutDBWin
-        '
-        Me.txtOutDBWin.Location = New System.Drawing.Point(123, 338)
-        Me.txtOutDBWin.Name = "txtOutDBWin"
-        Me.txtOutDBWin.Size = New System.Drawing.Size(36, 20)
-        Me.txtOutDBWin.TabIndex = 13
-        Me.txtOutDBWin.Text = "10"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(14, 341)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(79, 13)
-        Me.Label22.TabIndex = 12
-        Me.Label22.Text = "Out DB Winter:"
-        '
-        'txtInWBWin
-        '
-        Me.txtInWBWin.Location = New System.Drawing.Point(121, 111)
-        Me.txtInWBWin.Name = "txtInWBWin"
-        Me.txtInWBWin.Size = New System.Drawing.Size(36, 20)
-        Me.txtInWBWin.TabIndex = 11
-        Me.txtInWBWin.Text = "54"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(12, 114)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(74, 13)
-        Me.Label16.TabIndex = 10
-        Me.Label16.Text = "In WB Winter:"
-        '
-        'txtInDBWin
-        '
-        Me.txtInDBWin.Location = New System.Drawing.Point(121, 83)
-        Me.txtInDBWin.Name = "txtInDBWin"
-        Me.txtInDBWin.Size = New System.Drawing.Size(36, 20)
-        Me.txtInDBWin.TabIndex = 9
-        Me.txtInDBWin.Text = "72"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(12, 86)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(71, 13)
-        Me.Label17.TabIndex = 8
-        Me.Label17.Text = "In DB Winter:"
-        '
-        'txtOutWBSum
-        '
-        Me.txtOutWBSum.Location = New System.Drawing.Point(123, 309)
-        Me.txtOutWBSum.Name = "txtOutWBSum"
-        Me.txtOutWBSum.Size = New System.Drawing.Size(36, 20)
-        Me.txtOutWBSum.TabIndex = 7
-        Me.txtOutWBSum.Text = "74"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(14, 312)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(89, 13)
-        Me.Label18.TabIndex = 6
-        Me.Label18.Text = "Out WB Summer:"
-        '
-        'txtOutDBSum
-        '
-        Me.txtOutDBSum.Location = New System.Drawing.Point(123, 280)
-        Me.txtOutDBSum.Name = "txtOutDBSum"
-        Me.txtOutDBSum.Size = New System.Drawing.Size(36, 20)
-        Me.txtOutDBSum.TabIndex = 5
-        Me.txtOutDBSum.Text = "93"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(14, 283)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(83, 13)
-        Me.Label19.TabIndex = 4
-        Me.Label19.Text = "OutDB Summer:"
+        Me.GroupBox6.Text = "Indoor Conditions"
         '
         'txtInWBSum
         '
@@ -488,7 +386,7 @@ Partial Class Form1
         Me.txtInWBSum.Name = "txtInWBSum"
         Me.txtInWBSum.Size = New System.Drawing.Size(36, 20)
         Me.txtInWBSum.TabIndex = 3
-        Me.txtInWBSum.Text = "63"
+        Me.txtInWBSum.Text = "62.5"
         '
         'Label20
         '
@@ -497,7 +395,7 @@ Partial Class Form1
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(81, 13)
         Me.Label20.TabIndex = 2
-        Me.Label20.Text = "In WB Summer:"
+        Me.Label20.Text = "Indoor WB Summer:"
         '
         'txtInDBSum
         '
@@ -514,7 +412,109 @@ Partial Class Form1
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(78, 13)
         Me.Label21.TabIndex = 0
-        Me.Label21.Text = "In DB Summer:"
+        Me.Label21.Text = "Indoor DB Summer:"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(12, 86)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(71, 13)
+        Me.Label17.TabIndex = 8
+        Me.Label17.Text = "Indoor DB Winter:"
+        '
+        'txtInDBWin
+        '
+        Me.txtInDBWin.Location = New System.Drawing.Point(121, 83)
+        Me.txtInDBWin.Name = "txtInDBWin"
+        Me.txtInDBWin.Size = New System.Drawing.Size(36, 20)
+        Me.txtInDBWin.TabIndex = 9
+        Me.txtInDBWin.Text = "72"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(12, 114)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(74, 13)
+        Me.Label16.TabIndex = 10
+        Me.Label16.Text = "Indoor WB Winter:"
+        '
+        'txtInWBWin
+        '
+        Me.txtInWBWin.Location = New System.Drawing.Point(121, 111)
+        Me.txtInWBWin.Name = "txtInWBWin"
+        Me.txtInWBWin.Size = New System.Drawing.Size(36, 20)
+        Me.txtInWBWin.TabIndex = 11
+        Me.txtInWBWin.Text = "60"
+        '
+        'txtOutWBWin
+        '
+        Me.txtOutWBWin.Location = New System.Drawing.Point(123, 364)
+        Me.txtOutWBWin.Name = "txtOutWBWin"
+        Me.txtOutWBWin.Size = New System.Drawing.Size(36, 20)
+        Me.txtOutWBWin.TabIndex = 15
+        Me.txtOutWBWin.Text = "9"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(14, 367)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(82, 13)
+        Me.Label23.TabIndex = 14
+        Me.Label23.Text = "Outdoor WB Winter:"
+        '
+        'txtOutDBWin
+        '
+        Me.txtOutDBWin.Location = New System.Drawing.Point(123, 338)
+        Me.txtOutDBWin.Name = "txtOutDBWin"
+        Me.txtOutDBWin.Size = New System.Drawing.Size(36, 20)
+        Me.txtOutDBWin.TabIndex = 13
+        Me.txtOutDBWin.Text = "10"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(14, 341)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(79, 13)
+        Me.Label22.TabIndex = 12
+        Me.Label22.Text = "Outdoor DB Winter:"
+        '
+        'txtOutWBSum
+        '
+        Me.txtOutWBSum.Location = New System.Drawing.Point(123, 309)
+        Me.txtOutWBSum.Name = "txtOutWBSum"
+        Me.txtOutWBSum.Size = New System.Drawing.Size(36, 20)
+        Me.txtOutWBSum.TabIndex = 7
+        Me.txtOutWBSum.Text = "74"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(14, 312)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(89, 13)
+        Me.Label18.TabIndex = 6
+        Me.Label18.Text = "Outdoor WB Summer:"
+        '
+        'txtOutDBSum
+        '
+        Me.txtOutDBSum.Location = New System.Drawing.Point(123, 280)
+        Me.txtOutDBSum.Name = "txtOutDBSum"
+        Me.txtOutDBSum.Size = New System.Drawing.Size(36, 20)
+        Me.txtOutDBSum.TabIndex = 5
+        Me.txtOutDBSum.Text = "93"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(14, 283)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(83, 13)
+        Me.Label19.TabIndex = 4
+        Me.Label19.Text = "Outdoor DB Summer:"
         '
         'GroupBox7
         '
@@ -1330,6 +1330,18 @@ Partial Class Form1
         Me.GroupBox10.TabStop = False
         Me.GroupBox10.Text = "Scheduling"
         '
+        'chkJan
+        '
+        Me.chkJan.AutoSize = True
+        Me.chkJan.Checked = True
+        Me.chkJan.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkJan.Location = New System.Drawing.Point(6, 19)
+        Me.chkJan.Name = "chkJan"
+        Me.chkJan.Size = New System.Drawing.Size(63, 17)
+        Me.chkJan.TabIndex = 0
+        Me.chkJan.Text = "January"
+        Me.chkJan.UseVisualStyleBackColor = True
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -1651,14 +1663,6 @@ Partial Class Form1
         Me.txtEER.TabIndex = 3
         Me.txtEER.Text = "10"
         '
-        'txtRTUCapacity
-        '
-        Me.txtRTUCapacity.Location = New System.Drawing.Point(105, 19)
-        Me.txtRTUCapacity.Name = "txtRTUCapacity"
-        Me.txtRTUCapacity.Size = New System.Drawing.Size(49, 20)
-        Me.txtRTUCapacity.TabIndex = 1
-        Me.txtRTUCapacity.Text = "200000"
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -1668,6 +1672,14 @@ Partial Class Form1
         Me.Label14.TabIndex = 2
         Me.Label14.Text = "RTU EER"
         '
+        'txtRTUCapacity
+        '
+        Me.txtRTUCapacity.Location = New System.Drawing.Point(105, 19)
+        Me.txtRTUCapacity.Name = "txtRTUCapacity"
+        Me.txtRTUCapacity.Size = New System.Drawing.Size(49, 20)
+        Me.txtRTUCapacity.TabIndex = 1
+        Me.txtRTUCapacity.Text = "200000"
+        '
         'Label15
         '
         Me.Label15.AutoSize = True
@@ -1676,18 +1688,6 @@ Partial Class Form1
         Me.Label15.Size = New System.Drawing.Size(77, 13)
         Me.Label15.TabIndex = 0
         Me.Label15.Text = "RTU Capacity:"
-        '
-        'chkJan
-        '
-        Me.chkJan.AutoSize = True
-        Me.chkJan.Checked = True
-        Me.chkJan.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkJan.Location = New System.Drawing.Point(6, 19)
-        Me.chkJan.Name = "chkJan"
-        Me.chkJan.Size = New System.Drawing.Size(63, 17)
-        Me.chkJan.TabIndex = 0
-        Me.chkJan.Text = "January"
-        Me.chkJan.UseVisualStyleBackColor = True
         '
         'Form1
         '

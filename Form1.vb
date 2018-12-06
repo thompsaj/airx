@@ -742,7 +742,7 @@ Public Class Form1
 
         Dim HR As Double = Psychrometrics.WetBulbHR(weatherData.DB04, weatherData.MCWB04, CDbl(txtElev.Text))
 
-        summerWBIndoor = 63
+        summerWBIndoor = 62.5
 
 
 
@@ -757,7 +757,7 @@ Public Class Form1
         txtOutDBWin.Text = weatherData.DB996.ToString("#.0")
         txtOutWBWin.Text = weatherData.MCWB996.ToString("#.0")
         txtInDBWin.Text = WinterDBIndoor.ToString("#.0")
-        txtInWBWin.Text = "54.0"
+        txtInWBWin.Text = "60"
 
         fileName = weatherData.FileName
 
