@@ -488,6 +488,10 @@ Public Class Form1
             .InDBWin = CInt(txtInDBWin.Text)
             .InWBWin = CInt(txtInWBWin.Text)
 
+            '!!!!!!!!!!!!!!!!!BIN 3!!!!!!!!!!!
+            .OutDBbin3 = CInt(txtOutDBbin3.Text)
+            .OutWBbin3 = CInt(txtOutWBbin3.Text)
+
             'plenum static pressures
             .SSPress = CDbl(txtSSPress.Text)
             .ESPress = CDbl(txtESPressure.Text)
@@ -768,6 +772,13 @@ Public Class Form1
         'txtOutWBWin.Text = weatherData.MCWB996.ToString("#.0")
         txtOutWBWin.Text = "72.5"
 
+        'DB Bin 3
+        txtOutDBbin3.Text = "67.5"
+        'WB Bin 3
+        txtOutWBbin3.Text = "62.5"
+
+
+
         txtInDBWin.Text = WinterDBIndoor.ToString("#.0")
         txtInWBWin.Text = "60"
 
@@ -865,6 +876,11 @@ Public Class Form1
         funcInputs.AirInlet.InDBWin = CInt(txtInDBWin.Text)
         funcInputs.AirInlet.InWBWin = CInt(txtInWBWin.Text)
 
+        'Bin 3
+        funcInputs.AirInlet.OutDBbin3 = CInt(txtOutDBbin3.Text)
+        funcInputs.AirInlet.OutWBbin3 = CInt(txtOutWBbin3.Text)
+
+
 
         Me.Cursor = Cursors.WaitCursor
         calcFuncs.CalculateOutputs(funcInputs, calcOutputs, errs)
@@ -917,6 +933,10 @@ Public Class Form1
         funcInputs.AirInlet.OutWBWin = CInt(txtOutWBWin.Text)
         funcInputs.AirInlet.InDBWin = CInt(txtInDBWin.Text)
         funcInputs.AirInlet.InWBWin = CInt(txtInWBWin.Text)
+
+        'Bin 3
+        funcInputs.AirInlet.OutDBbin3 = CInt(txtOutDBbin3.Text)
+        funcInputs.AirInlet.OutWBbin3 = CInt(txtOutWBbin3.Text)
 
         'indicate which months should be included in bin energy calculations
         funcInputs.OpMonth = New OperationMonth
@@ -1058,6 +1078,10 @@ Public Class Form1
         funcInputs.AirInlet.InDBWin = CInt(txtInDBWin.Text)
         funcInputs.AirInlet.InWBWin = CInt(txtInWBWin.Text)
 
+        'Bin 3
+        funcInputs.AirInlet.OutDBbin3 = CInt(txtOutDBbin3.Text)
+        funcInputs.AirInlet.OutWBbin3 = CInt(txtOutWBbin3.Text)
+
         funcInputs.CalcEnergy = New CalculatedEnergy
         funcInputs.CalcEnergy.BinPreHeat = binEnData.BinPreheat
 
@@ -1193,6 +1217,10 @@ Public Class Form1
         funcInputs.AirInlet.OutWBWin = CInt(txtOutWBWin.Text)
         funcInputs.AirInlet.InDBWin = CInt(txtInDBWin.Text)
         funcInputs.AirInlet.InWBWin = CInt(txtInWBWin.Text)
+
+        'Bin 3
+        funcInputs.AirInlet.OutDBbin3 = CInt(txtOutDBbin3.Text)
+        funcInputs.AirInlet.OutWBbin3 = CInt(txtOutWBbin3.Text)
 
         funcInputs.CalcOutputs = calcOutputs
 
