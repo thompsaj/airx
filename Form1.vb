@@ -224,13 +224,13 @@ Public Class Form1
             'sb.AppendLine("senseff" & "," & .SensEff.ToString() & "," & "," & "sensible efficiency summer")
             'sb.AppendLine("winterlatenteff" & "," & .WinterLatentEff.ToString() & "," & "," & "latent efficiency winter")
             'sb.AppendLine("wintersenseff" & "," & .WinterSensEff.ToString() & "," & "," & "sensible efficiency winter")
-            sb.AppendLine("supdbsum" & "," & .SupDBSum.ToString() & "," & "," & "temperature of supply air summer F")
-            sb.AppendLine("supwbsum" & "," & .SupWBSum.ToString() & "," & "," & "wet bulb of supply air summer F")
+            sb.AppendLine("supdbsum" & "," & .SupDBSum.ToString() & "," & "," & "temperature of supply air Bin 1 (F)")
+            sb.AppendLine("supwbsum" & "," & .SupWBSum.ToString() & "," & "," & "wet bulb of supply air Bin 1 (F)")
             'sb.AppendLine("suphrsum" & "," & .SupHRSum.ToString() & "," & "," & "humidity ratio of supply air summer gr/lb")
             'sb.AppendLine("supRHsum" & "," & .SupRHSum.ToString() & "," & "," & "relative humidity of supply air summer %")
             'sb.AppendLine("supenthsum" & "," & .SupEnthSum.ToString() & "," & "," & "enthalpy of supply air summer Btu/lb")
-            sb.AppendLine("supdbwin" & "," & .SupDBWin.ToString() & "," & "," & "temperature of supply air winter F")
-            sb.AppendLine("supwbwin" & "," & .SupWBWin.ToString() & "," & "," & "wet bulb of supply air winter F")
+            sb.AppendLine("supdbwin" & "," & .SupDBWin.ToString() & "," & "," & "temperature of supply air Bin 2 (F)")
+            sb.AppendLine("supwbwin" & "," & .SupWBWin.ToString() & "," & "," & "wet bulb of supply air Bin 2 (F)")
             'sb.AppendLine("suphrwin" & "," & .SupHRWin.ToString() & "," & "," & "humidity ratio of supply air winter gr/lb")
             'sb.AppendLine("supRHwin" & "," & .SupRHWin.ToString() & "," & "," & "relative humidity of supply air winter %")
             'sb.AppendLine("supenthwin" & "," & .SupEnthWin.ToString() & "," & "," & "enthalpy of supply air winter Btu/lb")
@@ -749,13 +749,25 @@ Public Class Form1
         Dim WinterDBIndoor As Double = Math.Min(72, summerDBIndoor)
 
 
+        'DB Bin 1
+        'txtOutDBSum.Text = weatherData.DB04.ToString("#.0")
+        txtOutDBSum.Text = "87.5"
 
-        txtOutDBSum.Text = weatherData.DB04.ToString("#.0")
-        txtOutWBSum.Text = weatherData.MCWB04.ToString("#.0")
+        'WB Bin 1
+        'txtOutWBSum.Text = weatherData.MCWB04.ToString("#.0")
+        txtOutWBSum.Text = "82.5"
+
         txtInDBSum.Text = summerDBIndoor.ToString("#.0")
         txtInWBSum.Text = summerWBIndoor.ToString("#.0")
-        txtOutDBWin.Text = weatherData.DB996.ToString("#.0")
-        txtOutWBWin.Text = weatherData.MCWB996.ToString("#.0")
+
+        'DB Bin 2
+        'txtOutDBWin.Text = weatherData.DB996.ToString("#.0")
+        txtOutDBWin.Text = "77.5"
+
+        'WB Bin 2
+        'txtOutWBWin.Text = weatherData.MCWB996.ToString("#.0")
+        txtOutWBWin.Text = "72.5"
+
         txtInDBWin.Text = WinterDBIndoor.ToString("#.0")
         txtInWBWin.Text = "60"
 
