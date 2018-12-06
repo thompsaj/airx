@@ -730,12 +730,8 @@ Public Class Form1
         Dim summerDBIndoor As Double
         Dim summerWBIndoor As Double
 
-        If weatherData.DB04 >= 75 Then
-            summerDBIndoor = 75
-        Else
-            summerDBIndoor = 72
 
-        End If
+        summerDBIndoor = 75
 
 
         txtElev.Text = weatherData.Elev.ToString
@@ -745,12 +741,9 @@ Public Class Form1
         Dim AirPressure As Double = Psychrometrics.AirPressure
 
         Dim HR As Double = Psychrometrics.WetBulbHR(weatherData.DB04, weatherData.MCWB04, CDbl(txtElev.Text))
-        If HR >= Psychrometrics.WetBulbHR(75, 63, CDbl(txtElev.Text)) Then
-            summerWBIndoor = 63
-        Else
-            Dim h As Double = Psychrometrics.Enthalpy(weatherData.DB04, HR)
-            summerWBIndoor = Psychrometrics.WetBulbTemp(summerDBIndoor, h, 63, AirPressure)
-        End If
+
+        summerWBIndoor = 63
+
 
 
         Dim WinterDBIndoor As Double = Math.Min(72, summerDBIndoor)
@@ -1466,4 +1459,11 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub txtSat_TextChanged(sender As Object, e As EventArgs) Handles txtSat.TextChanged
+
+    End Sub
+
+    Private Sub txtRptLoc_TextChanged(sender As Object, e As EventArgs) Handles txtRptLoc.TextChanged
+
+    End Sub
 End Class
